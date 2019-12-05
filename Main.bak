@@ -1465,4 +1465,6 @@ F 3 "" H 1750 5900 50  0001 C CNN
 	1    1750 5900
 	1    0    0    -1  
 $EndComp
+Text Notes 13100 3800 0    50   ~ 0
+Silk screen will be used to label all the TP's\n\n
 $EndSCHEMATC
