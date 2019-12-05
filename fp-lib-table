@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name Housings_SON)(type KiCad)(uri C:/Users/Brandon/Downloads/Housings_SON.pretty-master/Housings_SON.pretty)(options "")(descr ""))
+  (lib (name tps2557)(type KiCad)(uri ${KIPRJMOD}/tps2557.pretty)(options "")(descr ""))
+)
