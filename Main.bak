@@ -824,8 +824,6 @@ Text GLabel 9350 7350 0    50   Input ~ 0
 PACK+
 Text GLabel 14950 8350 2    50   Input ~ 0
 MPB
-Text GLabel 9750 5350 2    50   Input ~ 0
-PACK+
 Text GLabel 3500 5400 2    50   Input ~ 0
 5Vref
 Text GLabel 4900 5400 2    50   Input ~ 0
@@ -854,8 +852,6 @@ Text Notes 4900 5300 0    50   ~ 0
 2.5uA
 Wire Wire Line
 	8200 5400 9450 5400
-Text GLabel 10700 5350 2    50   Input ~ 0
-PACK+
 Text GLabel 10700 5900 0    50   Input ~ 0
 ChargeOK
 Wire Wire Line
@@ -865,7 +861,7 @@ L Device:R R19
 U 1 1 5E502CF3
 P 10700 5650
 F 0 "R19" H 10770 5696 50  0000 L CNN
-F 1 "66.5k" H 10770 5605 50  0000 L CNN
+F 1 "332k" H 10770 5605 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 10630 5650 50  0001 C CNN
 F 3 "~" H 10700 5650 50  0001 C CNN
 	1    10700 5650
@@ -885,8 +881,6 @@ Text GLabel 12650 6050 2    50   Input ~ 0
 DischargeOK
 Text GLabel 11200 6050 0    50   Input ~ 0
 BATdiv3
-Text GLabel 12650 5500 2    50   Input ~ 0
-PACK+
 Wire Wire Line
 	12650 5500 12650 5650
 $Comp
@@ -894,7 +888,7 @@ L Device:R R22
 U 1 1 5E4E638D
 P 12650 5800
 F 0 "R22" H 12720 5846 50  0000 L CNN
-F 1 "66.5k" H 12720 5755 50  0000 L CNN
+F 1 "332k" H 12720 5755 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 12580 5800 50  0001 C CNN
 F 3 "~" H 12650 5800 50  0001 C CNN
 	1    12650 5800
@@ -919,8 +913,6 @@ F 3 "" H 11050 6450 50  0001 C CNN
 	1    11050 6450
 	1    0    0    -1  
 $EndComp
-Text GLabel 12000 5900 2    50   Input ~ 0
-5Vin
 $Comp
 L Main-rescue:LM393-CustomSymbols U5
 U 1 1 5E4E6374
@@ -1143,7 +1135,7 @@ L Device:R R17
 U 1 1 5E374AB5
 P 9750 5650
 F 0 "R17" H 9820 5696 50  0000 L CNN
-F 1 "56.2k" H 9820 5605 50  0000 L CNN
+F 1 "284k" H 9820 5605 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9680 5650 50  0001 C CNN
 F 3 "~" H 9750 5650 50  0001 C CNN
 	1    9750 5650
@@ -1168,8 +1160,6 @@ F 3 "" H 8150 6300 50  0001 C CNN
 	1    8150 6300
 	1    0    0    -1  
 $EndComp
-Text GLabel 9100 5750 2    50   Input ~ 0
-5Vin
 $Comp
 L Main-rescue:LM393-CustomSymbols U3
 U 1 1 5E36A682
@@ -1467,4 +1457,52 @@ F 3 "" H 1750 5900 50  0001 C CNN
 $EndComp
 Text Notes 13100 3800 0    50   ~ 0
 Silk screen will be used to label all the TP's\n\n
+Text GLabel 12650 5500 2    50   Input ~ 0
+5Vref
+Text GLabel 10700 5350 2    50   Input ~ 0
+5Vref
+Text GLabel 9750 5350 2    50   Input ~ 0
+5Vref
+Text Notes 11150 5400 0    50   ~ 0
+Pull-up resistors sizing:\n6uA leakage current\n3V minimum High-Level Voltage
+Text Notes 8400 5250 0    50   ~ 0
+Pull-up resistors sizing:\n7uA leakage current\n3V minimum High-Level Voltage
+Text Notes 8100 6650 0    50   ~ 0
+18uA Sink Current when output low
+Text Notes 11300 6650 0    50   ~ 0
+15uA Sink Current when output low
+Text GLabel 12000 5900 2    50   Input ~ 0
+PACK+
+Text GLabel 9100 5750 2    50   Input ~ 0
+PACK+
+Text GLabel 10300 4300 2    50   Input ~ 0
+PACK+
+$Comp
+L Device:C C?
+U 1 1 5DEA295E
+P 10300 4600
+F 0 "C?" H 10415 4646 50  0000 L CNN
+F 1 "1u" H 10415 4555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 10338 4450 50  0001 C CNN
+F 3 "~" H 10300 4600 50  0001 C CNN
+	1    10300 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 5DEA2F75
+P 10300 4850
+F 0 "#PWR?" H 10300 4600 50  0001 C CNN
+F 1 "GNDA" H 10305 4677 50  0000 C CNN
+F 2 "" H 10300 4850 50  0001 C CNN
+F 3 "" H 10300 4850 50  0001 C CNN
+	1    10300 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 4450 10300 4300
+Wire Wire Line
+	10300 4750 10300 4850
+Text Notes 9750 4150 0    50   ~ 0
+Comparator Supply Bypass Capacitor
 $EndSCHEMATC
