@@ -327,39 +327,6 @@ F 3 "~" H 7450 8350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint SCL1
-U 1 1 5DE9DE05
-P 6900 9450
-F 0 "SCL1" V 6800 9600 50  0000 C CNN
-F 1 "TestPoint" V 6700 9600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 7100 9450 50  0001 C CNN
-F 3 "~" H 7100 9450 50  0001 C CNN
-	1    6900 9450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Connector:TestPoint SDA1
-U 1 1 5DE9F47E
-P 7900 9450
-F 0 "SDA1" V 7854 9638 50  0000 L CNN
-F 1 "TestPoint" V 7945 9638 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 8100 9450 50  0001 C CNN
-F 3 "~" H 8100 9450 50  0001 C CNN
-	1    7900 9450
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint AL/CC1
-U 1 1 5DE9FAC6
-P 7900 9150
-F 0 "AL/CC1" V 7854 9338 50  0000 L CNN
-F 1 "TestPoint" V 7945 9338 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 8100 9150 50  0001 C CNN
-F 3 "~" H 8100 9150 50  0001 C CNN
-	1    7900 9150
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GNDD #PWR010
 U 1 1 5DEA08FF
 P 6750 9150
@@ -1334,48 +1301,10 @@ F 3 "" H 5650 6450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5650 6450 5650 6350
-$Comp
-L Connector:TestPoint PACK+1
-U 1 1 5E5B47FA
-P 8450 7850
-F 0 "PACK+1" H 8508 7968 50  0000 L CNN
-F 1 "TestPoint" H 8508 7877 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 8650 7850 50  0001 C CNN
-F 3 "~" H 8650 7850 50  0001 C CNN
-	1    8450 7850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8450 8350 8450 7850
 Wire Wire Line
 	8450 8350 8450 8900
 Wire Wire Line
 	4800 8000 4800 8350
-$Comp
-L Connector:TestPoint BAT+1
-U 1 1 5E5C1DD0
-P 4800 8000
-F 0 "BAT+1" H 4858 8118 50  0000 L CNN
-F 1 "TestPoint" H 4858 8027 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 5000 8000 50  0001 C CNN
-F 3 "~" H 5000 8000 50  0001 C CNN
-	1    4800 8000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 9300 4800 9600
-Connection ~ 4800 9300
-$Comp
-L Connector:TestPoint BAT-1
-U 1 1 5E5C8259
-P 4800 9600
-F 0 "BAT-1" H 4742 9626 50  0000 R CNN
-F 1 "TestPoint" H 4742 9717 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 5000 9600 50  0001 C CNN
-F 3 "~" H 5000 9600 50  0001 C CNN
-	1    4800 9600
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	14750 8350 14750 8000
 Connection ~ 14750 8350
@@ -1505,4 +1434,44 @@ Wire Wire Line
 	10300 4750 10300 4850
 Text Notes 9750 4150 0    50   ~ 0
 Comparator Supply Bypass Capacitor
+$Comp
+L Connector:Conn_01x06_Male J2
+U 1 1 5DFA344A
+P 7200 10650
+F 0 "J2" V 7262 10894 50  0000 L CNN
+F 1 "Conn_01x06_Male" V 7353 10894 50  0000 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x06_P2.00mm_Vertical" H 7200 10650 50  0001 C CNN
+F 3 "~" H 7200 10650 50  0001 C CNN
+	1    7200 10650
+	0    -1   -1   0   
+$EndComp
+Text GLabel 7000 10450 1    50   Input ~ 0
+BAT+1
+Text GLabel 7100 10450 1    50   Input ~ 0
+BAT-1
+Text GLabel 4800 8000 1    50   Input ~ 0
+BAT+1
+Text GLabel 4800 9400 3    50   Input ~ 0
+BAT-1
+Wire Wire Line
+	4800 9300 4800 9400
+Connection ~ 4800 9300
+Text GLabel 7200 10450 1    50   Input ~ 0
+SCL1
+Text GLabel 6900 9450 0    50   Input ~ 0
+SCL1
+Text GLabel 7300 10450 1    50   Input ~ 0
+SDA1
+Text GLabel 7900 9450 2    50   Input ~ 0
+SDA1
+Text GLabel 7900 9150 2    50   Input ~ 0
+AL_CC1
+Text GLabel 7400 10450 1    50   Input ~ 0
+AL_CC1
+Text GLabel 7500 10450 1    50   Input ~ 0
+PACK+1
+Wire Wire Line
+	8450 8350 8450 8200
+Text GLabel 8450 8200 1    50   Input ~ 0
+PACK+1
 $EndSCHEMATC
