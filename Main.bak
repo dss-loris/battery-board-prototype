@@ -1498,10 +1498,10 @@ Wire Notes Line
 Text Notes 800  6300 0    50   ~ 0
 BQ29707 Test Points
 $Comp
-L Connector:Conn_01x01_Male PACK+
+L Connector:Conn_01x01_Male J4
 U 1 1 5E0CE65E
 P 9300 5750
-F 0 "PACK+" V 9850 5700 50  0000 L CNN
+F 0 "J4" V 9850 5700 50  0000 L CNN
 F 1 "Conn_01x01_Male" V 9950 5400 50  0000 L CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_1x01_P2.00mm_Vertical" H 9300 5750 50  0001 C CNN
 F 3 "~" H 9300 5750 50  0001 C CNN
