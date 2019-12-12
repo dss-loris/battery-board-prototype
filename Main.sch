@@ -1593,5 +1593,5 @@ Wire Notes Line
 Text Notes 6100 900  0    157  ~ 0
 Battery Control
 Text Notes 3550 4750 0    157  ~ 0
-Battery Protection, Columb Counter and Discharge/Charge Load switches
+Battery Protection, Coloumb Counter and Discharge/Charge Load switches
 $EndSCHEMATC
