@@ -1186,31 +1186,31 @@ Text Notes 1050 7050 0    50   ~ 0
 BQ29707 Test Points
 Text GLabel 8700 7600 1    50   Input ~ 0
 PACK+1
-Text GLabel 7250 6650 1    50   Input ~ 0
+Text GLabel 7750 9500 1    50   Input ~ 0
 PACK+1
-Text GLabel 7150 6650 1    50   Input ~ 0
+Text GLabel 7650 9500 1    50   Input ~ 0
 AL_CC1
 Text GLabel 8150 8550 2    50   Input ~ 0
 AL_CC1
-Text GLabel 7050 6650 1    50   Input ~ 0
+Text GLabel 7550 9500 1    50   Input ~ 0
 SDA1
-Text GLabel 6950 6650 1    50   Input ~ 0
+Text GLabel 7450 9500 1    50   Input ~ 0
 SCL1
 Text GLabel 5050 7400 1    50   Input ~ 0
 BAT+1
-Text GLabel 6850 6650 1    50   Input ~ 0
+Text GLabel 7350 9500 1    50   Input ~ 0
 BAT-1
-Text GLabel 6750 6650 1    50   Input ~ 0
+Text GLabel 7250 9500 1    50   Input ~ 0
 BAT+1
 $Comp
 L Connector:Conn_01x06_Male J2
 U 1 1 5DFA344A
-P 6950 6850
-F 0 "J2" V 6750 6800 50  0000 L CNN
-F 1 "Conn_01x06_Male" V 6850 6500 50  0000 L CNN
-F 2 "Connector_PinSocket_2.00mm:PinSocket_1x06_P2.00mm_Vertical" H 6950 6850 50  0001 C CNN
-F 3 "~" H 6950 6850 50  0001 C CNN
-	1    6950 6850
+P 7450 9700
+F 0 "J2" V 7250 9650 50  0000 L CNN
+F 1 "Conn_01x06_Male" V 7350 9350 50  0000 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x06_P2.00mm_Vertical" H 7450 9700 50  0001 C CNN
+F 3 "~" H 7450 9700 50  0001 C CNN
+	1    7450 9700
 	0    -1   -1   0   
 $EndComp
 Connection ~ 5050 8700
