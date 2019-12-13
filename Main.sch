@@ -1225,17 +1225,6 @@ Wire Wire Line
 Connection ~ 8700 7750
 Wire Wire Line
 	8900 7750 8700 7750
-$Comp
-L Switch:SW_Push OUT1
-U 1 1 5E2FB6C9
-P 9100 7750
-F 0 "OUT1" H 9000 8100 50  0000 L CNN
-F 1 "SW_Push" H 9000 8000 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 9100 7950 50  0001 C CNN
-F 3 "~" H 9100 7950 50  0001 C CNN
-	1    9100 7750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7850 7750 8700 7750
 Wire Wire Line
@@ -1437,17 +1426,6 @@ Wire Wire Line
 Connection ~ 5800 7750
 Wire Wire Line
 	5800 8100 5800 7750
-$Comp
-L Switch:SW_Push SHORT1
-U 1 1 5D0F6604
-P 5800 8300
-F 0 "SHORT1" V 5754 8448 50  0000 L CNN
-F 1 "SW_Push" V 5845 8448 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 5800 8500 50  0001 C CNN
-F 3 "~" H 5800 8500 50  0001 C CNN
-	1    5800 8300
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	3150 8300 3150 8400
 Connection ~ 3150 8300
@@ -1590,4 +1568,26 @@ Wire Notes Line
 	15450 5000 1000 5000
 Wire Notes Line
 	1000 5000 1000 1100
+$Comp
+L Jumper:Jumper_2_Open JP2
+U 1 1 5DF47769
+P 9100 7750
+F 0 "JP2" H 9100 7525 50  0000 C CNN
+F 1 "Jumper_2_Open" H 9100 7600 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 9100 7750 50  0001 C CNN
+F 3 "~" H 9100 7750 50  0001 C CNN
+	1    9100 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_2_Open JP1
+U 1 1 5DF5F15C
+P 5800 8300
+F 0 "JP1" H 5800 8075 50  0000 C CNN
+F 1 "Jumper_2_Open" H 5800 8150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 5800 8300 50  0001 C CNN
+F 3 "~" H 5800 8300 50  0001 C CNN
+	1    5800 8300
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
