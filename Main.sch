@@ -1574,7 +1574,7 @@ U 1 1 5DF47769
 P 9100 7750
 F 0 "JP2" H 9100 7525 50  0000 C CNN
 F 1 "Jumper_2_Open" H 9100 7600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 9100 7750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 9100 7750 50  0001 C CNN
 F 3 "~" H 9100 7750 50  0001 C CNN
 	1    9100 7750
 	1    0    0    -1  
@@ -1585,7 +1585,7 @@ U 1 1 5DF5F15C
 P 5800 8300
 F 0 "JP1" H 5800 8075 50  0000 C CNN
 F 1 "Jumper_2_Open" H 5800 8150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 5800 8300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 5800 8300 50  0001 C CNN
 F 3 "~" H 5800 8300 50  0001 C CNN
 	1    5800 8300
 	0    -1   -1   0   
