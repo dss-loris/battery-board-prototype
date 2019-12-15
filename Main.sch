@@ -997,50 +997,24 @@ F 3 "~" H 11450 3250 50  0001 C CNN
 	1    11450 3250
 	0    -1   -1   0   
 $EndComp
-$Comp
-L Connector:Conn_01x05_Male J3
-U 1 1 5DFA2C02
-P 8350 3150
-F 0 "J3" V 8504 2862 50  0000 R CNN
-F 1 "Conn_01x05_Male" V 8413 2862 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x05_P2.00mm_Vertical" H 8350 3150 50  0001 C CNN
-F 3 "~" H 8350 3150 50  0001 C CNN
-	1    8350 3150
-	0    -1   -1   0   
-$EndComp
-Text GLabel 8150 2950 1    50   Input ~ 0
+Text GLabel 8150 2800 1    50   Input ~ 0
 BatTemp
-Text GLabel 8250 2950 1    50   Input ~ 0
+Text GLabel 8250 2800 1    50   Input ~ 0
 HighTemp
-Text GLabel 8350 2950 1    50   Input ~ 0
-BatTemp
-Text GLabel 8450 2950 1    50   Input ~ 0
+Text GLabel 8350 2800 1    50   Input ~ 0
 LowTemp
-Text GLabel 8550 2950 1    50   Input ~ 0
+Text GLabel 8450 2800 1    50   Input ~ 0
 TempOK
-Text GLabel 14300 3150 1    50   Input ~ 0
-TempOK
-Text GLabel 14400 3150 1    50   Input ~ 0
+Text GLabel 14400 3050 1    50   Input ~ 0
 ChargeOK
-Text GLabel 14500 3150 1    50   Input ~ 0
+Text GLabel 14500 3050 1    50   Input ~ 0
 DischargeEnable
-Text GLabel 14200 3150 1    50   Input ~ 0
+Text GLabel 14300 3050 1    50   Input ~ 0
 ChargeEnable
-Text GLabel 14100 3150 1    50   Input ~ 0
+Text GLabel 14200 3050 1    50   Input ~ 0
 TempOK
-Text GLabel 14000 3150 1    50   Input ~ 0
+Text GLabel 14100 3050 1    50   Input ~ 0
 DischargeOK
-$Comp
-L Connector:Conn_01x06_Male J9
-U 1 1 5DFC1AB1
-P 14200 3350
-F 0 "J9" V 14354 2962 50  0000 R CNN
-F 1 "Conn_01x06_Male" V 14263 2962 50  0000 R CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Vertical" H 14200 3350 50  0001 C CNN
-F 3 "~" H 14200 3350 50  0001 C CNN
-	1    14200 3350
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Main-rescue:SN74LVC2G08-CustomSymbols U7
 U 1 1 5E50F4E1
@@ -1163,8 +1137,6 @@ Wire Notes Line
 	13600 1250 13600 2300
 Wire Notes Line
 	1000 1100 15450 1100
-Wire Notes Line
-	15450 1100 15450 5000
 Text Notes 7250 1000 0    157  ~ 0
 Battery Control
 Text Notes 3450 6000 0    157  ~ 0
@@ -1588,6 +1560,28 @@ F 1 "Jumper_2_Open" H 5800 8150 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 5800 8300 50  0001 C CNN
 F 3 "~" H 5800 8300 50  0001 C CNN
 	1    5800 8300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J3
+U 1 1 5DF9ED68
+P 8250 3000
+F 0 "J3" V 8404 2712 50  0000 R CNN
+F 1 "Conn_01x04_Male" V 8313 2712 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 8250 3000 50  0001 C CNN
+F 3 "~" H 8250 3000 50  0001 C CNN
+	1    8250 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x05_Male J9
+U 1 1 5E03D4C2
+P 14300 3250
+F 0 "J9" V 14454 2962 50  0000 R CNN
+F 1 "Conn_01x05_Male" V 14363 2962 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x05_P2.00mm_Vertical" H 14300 3250 50  0001 C CNN
+F 3 "~" H 14300 3250 50  0001 C CNN
+	1    14300 3250
 	0    -1   -1   0   
 $EndComp
 $EndSCHEMATC
