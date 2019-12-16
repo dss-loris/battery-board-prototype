@@ -1574,13 +1574,7 @@ F 3 "~" H 14300 3250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Notes Line
-	1000 1750 2400 1750
-Wire Notes Line
-	2400 1750 2400 1100
-Wire Notes Line
 	15450 5000 15450 1100
-Text Notes 1150 1250 0    50   ~ 0
-Isolate Analog signals on PCB
 $Comp
 L power:GNDD #PWR?
 U 1 1 5E111712
