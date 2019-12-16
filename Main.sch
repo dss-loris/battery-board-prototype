@@ -1032,17 +1032,6 @@ Wire Wire Line
 	13750 4300 13850 4300
 Wire Wire Line
 	13750 4400 13750 4300
-$Comp
-L power:GNDD #PWR023
-U 1 1 5E551E1B
-P 13750 4400
-F 0 "#PWR023" H 13750 4150 50  0001 C CNN
-F 1 "GNDD" H 13754 4245 50  0000 C CNN
-F 2 "" H 13750 4400 50  0001 C CNN
-F 3 "" H 13750 4400 50  0001 C CNN
-	1    13750 4400
-	1    0    0    -1  
-$EndComp
 Text GLabel 13850 4100 0    50   Input ~ 0
 ChargeEnable
 Text GLabel 14700 4300 2    50   Input ~ 0
@@ -1583,5 +1572,18 @@ F 2 "Connector_PinHeader_2.00mm:PinHeader_1x05_P2.00mm_Vertical" H 14300 3250 50
 F 3 "~" H 14300 3250 50  0001 C CNN
 	1    14300 3250
 	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	15450 5000 15450 1100
+$Comp
+L power:GNDD #PWR?
+U 1 1 5E111712
+P 13750 4400
+F 0 "#PWR?" H 13750 4150 50  0001 C CNN
+F 1 "GNDD" H 13754 4245 50  0000 C CNN
+F 2 "" H 13750 4400 50  0001 C CNN
+F 3 "" H 13750 4400 50  0001 C CNN
+	1    13750 4400
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
